@@ -1,0 +1,14 @@
+{
+  "name": "seex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kira0x1 <kira.eva@protonmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
