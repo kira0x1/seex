@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000
 app.use(express.static('public', {
     setHeaders: function (res, path) {
         if (path.endsWith('.br')) {
-            res.set("Content-Type", "wasm");
+            if (path.includes('wasm')) res.set("Content-Type", "wasm");
             res.set("Content-Encoding", "br");
         }
     }
