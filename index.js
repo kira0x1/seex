@@ -19,7 +19,7 @@ app.use(
  * @param {string} path 
  */
 function setContentHeaders(res, path) {
-    if (path.includes(".wasm.br"))
+    if (path.endsWith(".wasm.br"))
         res.set("Content-Type", "application/wasm");
     else
         res.set("Content-Type", "application/javascript");
