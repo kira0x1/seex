@@ -6,6 +6,7 @@ app.use(express.static('public', {
     setHeaders: function (res, path) {
         if (path.endsWith('.br')) {
             // res.set("Content-Type", "application/wasm");
+            res.set("Content-Type", "application/javascript")
             res.set("Content-Encoding", "br");
         }
     }
